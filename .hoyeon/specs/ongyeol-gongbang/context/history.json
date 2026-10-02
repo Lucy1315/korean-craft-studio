@@ -1,0 +1,46 @@
+[
+  {
+    "ts": "2026-09-30T12:40:04.975Z",
+    "type": "spec_created"
+  },
+  {
+    "ts": "2026-09-30T12:40:05.132Z",
+    "type": "spec_updated",
+    "detail": "merged: meta, context"
+  },
+  {
+    "ts": "2026-09-30T12:40:32.161Z",
+    "type": "spec_updated",
+    "detail": "merged: context"
+  },
+  {
+    "ts": "2026-09-30T12:41:32.624Z",
+    "type": "spec_updated",
+    "detail": "merged: context"
+  },
+  {
+    "ts": "2026-09-30T12:41:44.990Z",
+    "type": "spec_updated",
+    "detail": "merged: constraints, context"
+  },
+  {
+    "ts": "2026-09-30T12:43:08.886Z",
+    "type": "spec_updated",
+    "detail": "merged: context"
+  },
+  {
+    "ts": "2026-09-30T12:43:08.984Z",
+    "type": "spec_updated",
+    "detail": "merged: context"
+  },
+  {
+    "ts": "2026-09-30T12:43:55.900Z",
+    "type": "spec_updated",
+    "detail": "merged: context"
+  },
+  {
+    "ts": "2026-09-30T12:47:33.402Z",
+    "type": "spec_updated",
+    "detail": "merged: context"
+  }
+]

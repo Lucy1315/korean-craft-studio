@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* 색 값은 src/styles/tokens.ts와 같아야 한다(contrast.test.ts가 검사한다). */
+@theme {
+  --color-paper: #F7F3EA;
+  --color-paper-deep: #EFE8D8;
+  --color-ink: #22201C;
+  --color-ink-muted: #5C564C;
+  --color-jjok: #1F4E79;
+  --color-on-jjok: #FFFFFF;
+  --color-line: #D9D2C2;
+  --color-danger: #A32A1E;
+  --color-focus-ring: #1F4E79;
+
+  --font-sans: var(--font-sans-kr), "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --font-serif: var(--font-serif-kr), "AppleMyungjo", "Batang", serif;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+body {
+  font-family: var(--font-sans);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+/* 모달이 열려 있는 동안 배경 스크롤을 잠근다. */
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+dialog::backdrop {
+  background: rgb(34 32 28 / 0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
